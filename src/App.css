@@ -1,38 +1,145 @@
-.App {
-  text-align: center;
+.homePageWrapper{
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.formWrapper{
+  background-color: #282836;
+  padding: 70px;
+  border-radius: 10px;
+  width: 400px;
+  max-width: 90%;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+footer{
+  position: fixed;
+  bottom: 0;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+footer a{
+  color: #44ee88;
+}
+.inputGroup{
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+  
+}
+.mainLabel{
+  margin-bottom: 20px;
+  margin-top: 0;
+}
+.hlogo{
+  height: 80px;
+  margin-bottom: 30px;
+}
+.inputBox{
+  margin-bottom: 14px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  font-weight: bold;
+  font-size: 16px;
+  background: #eee;
+}
+.btn{
+  border-radius: 5px;
+  padding: 5px;
+  border: none;
+  outline: none;
+  color: rgb(225, 226, 234);
+  font-weight: bold;
+  font-size: 16px;
+  background: rgb(236, 82, 82);
+  cursor: pointer;
+  margin-bottom: 20px;
+  margin-left: 25%;
+  width:50%;
+  transition: all 0.5s ease-in-out;
+}
+.btn:hover{
+  background-color: #44ee88;
+}
+.createInfo {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 0 auto;
+}
+.createInfo a{
+  color:red;
+  transition: all s ease-in-out;
+}
+.createInfo a:hover{
+  color: #44ee88;
+}
+.mainWrap{
+   display: grid;
+   grid-template-columns: 230px 1fr;
+   height: 100vh;
+}
+.aside{
+  background-color: #1d1d33;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+}
+.asideInner{
+  flex: 1;
+}
+.btn1{
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+.clientList {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-gap: 5px;
 }
 
-.App-link {
-  color: #61dafb;
+.Client{
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom:10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.userName{
+  font-size: 16px;
+  font-weight: bold;
+  color: #fff;
+}
+
+.h3{
+  color: #fff;
+  margin-left: 0;
+  text-align: left;
+  padding: 5px;
+}
+.logo{
+  border-bottom: 2px solid  #3f3f9b;
+  padding-bottom: 10px;
+}
+.logoImage{
+  height: 75px;
+}
+.copybtn{
+  margin-bottom: 10px;
+  background-color: #3f3f9b;
+  color: #fff;
+}
+.leavebtn{
+  background-color: #058f3c;
+  color: #fff;
+}
+.CodeMirror{
+  min-height: calc(100vh - 20px);
+  font-size: 20px;
+  line-height: 1.6;
+  padding-top: 20px;
 }
